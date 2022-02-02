@@ -105,8 +105,8 @@ Pré requisito:
     Description: github-ssh<br>
     Username: git (sempre "git" pois a conexão será realizada por chave SSH)<br>
     Private Key:<br>
-    - Enter directly: "Colar chave privada" <br>
-    Passphrase: (não necessário pois chave criada sem passphrase)
+    - Enter directly: "Colar chave privada"<br>
+    Passphrase: (não necessário pois chave criada sem passphrase)<br>
 </kbd>
 <br />
 <br />
