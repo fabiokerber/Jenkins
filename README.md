@@ -34,8 +34,6 @@ Pré requisito:
 ```
 <br />
 
-**Conexão VM Jenkins > Github e Criação Repo Lab**<br>
-
 # Criar par de chaves VM Jenkins
     > cd .\Jenkins\install
     > vagrant ssh
@@ -91,7 +89,7 @@ Pré requisito:
         $ cd ~/jenkins-todo-list/ && git remote add origin git@github.com:fabiokerber/jenkins-todo-list.git
         $ cd ~/jenkins-todo-list/ && git push -u origin master
 
-**Criação de usuário Jenkins**<br>
+# Criação de usuário Jenkins
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
 </kbd>
@@ -111,7 +109,7 @@ Pré requisito:
 <br />
 <br />
 
-**Alterar/Verificar fuso horário**<br>
+# Alterar/Verificar fuso horário
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221125.jpg"><br>
     Acessar configurações do usuário.
@@ -124,7 +122,7 @@ Pré requisito:
 <br />
 <br />
 
-**Novo Job Jenkins**<br>
+# Novo Job Jenkins
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220952.jpg">
 </kbd>
@@ -166,6 +164,53 @@ Pré requisito:
 <br />
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221123.jpg">
+</kbd>
+<br />
+<br />
+
+# Build manual da aplicação
+Perceber a diferença entre build manual e automatizado.<br>
+```
+> cd .\Jenkins\install
+> vagrant ssh
+    $ cd ~/jenkins-todo-list/to_do/
+    $ vi .env
+        [config]
+        # Secret configuration
+        SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv' (utilizado por exemplo para os hashs de senha)
+
+        # conf
+        DEBUG=True
+
+        # Database
+        DB_NAME = "todo_dev"
+        DB_USER = "devops_dev"
+        DB_PASSWORD = "mestre"
+        DB_HOST = "localhost"
+        DB_PORT = "3306"
+```
+
+```
+> cd .\Jenkins\install
+> vagrant ssh
+    $ cd ~/jenkins-todo-list/to_do/
+    $ vi .env
+        [config]
+        # Secret configuration
+        SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv' (utilizado por exemplo para os hashs de senha)
+
+        # conf
+        DEBUG=True
+
+        # Database
+        DB_NAME = "todo_dev"
+        DB_USER = "devops_dev"
+        DB_PASSWORD = "mestre"
+        DB_HOST = "localhost"
+        DB_PORT = "3306"
+```
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220952.jpg">
 </kbd>
 <br />
 <br />
