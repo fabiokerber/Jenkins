@@ -8,7 +8,7 @@ Pré requisito:
 |`VirtualBox`| https://download.virtualbox.org/virtualbox/6.1.30/VirtualBox-6.1.30-148432-Win.exe
 
 
-**Preparação ambiente**<br>
+# Preparação ambiente
 ```
 # Subindo o ambiente virtualizado
     > cd .\Jenkins\install
@@ -169,7 +169,7 @@ Pré requisito:
 <br />
 <br />
 
-# Build manual da aplicação
+## Build manual da aplicação
 Perceber a diferença entre build manual e automatizado.<br>
 ```
 > cd .\Jenkins\install
