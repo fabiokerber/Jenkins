@@ -169,7 +169,7 @@ Pré requisito:
 <br />
 <br />
 
-# Build manual da aplicação
+# Build manual da aplicação (DEV)
 Perceber a diferença entre build manual e automatizado.<br>
 ```
 > cd .\Jenkins\install
@@ -198,7 +198,7 @@ Perceber a diferença entre build manual e automatizado.<br>
 # Isolar a aplicação e ativar o virtualenv
 ```
     $ cd ~/jenkins-todo-list/    
-    $ virtualenv  --always-copy  venv-django-todolist
+    $ virtualenv --always-copy venv-django-todolist
     $ source venv-django-todolist/bin/activate
     $ cat requirements.txt (visualiza todas as dependencias a serem instaladas com o proximo comando)
     $ pip install -r requirements.txt
@@ -213,9 +213,70 @@ Perceber a diferença entre build manual e automatizado.<br>
 # Criando superusuario para o Django
 ```
     $ python manage.py createsuperuser
+        Username : alura
+        Email address: aluno@alura.com.br
+        Password: mestre123
+```
+
+# Rodar aplicação
+```
+    $ python manage.py runserver 0:8000
+http://192.168.33.10:8000 ( alura | mestre123 )
+    $ CTRL+C (parar aplicação)
 ```
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220952.jpg">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221702.jpg">
 </kbd>
 <br />
 <br />
+
+# Build manual da aplicação (PRD)
+```
+> cd .\Jenkins\install
+> vagrant ssh
+    $ cd ~/jenkins-todo-list/to_do/
+    $ vi .env
+        [config]
+        # Secret configuration
+        SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'
+
+        # conf
+        DEBUG=True
+
+        # Database
+        DB_NAME = "todo"
+        DB_USER = "devops"
+        DB_PASSWORD = "mestre"
+        DB_HOST = "localhost"
+        DB_PORT = "3306"
+```
+
+# Criando tabelas do banco de dados e ajustando permissões, agora para PRD
+```
+    $ python manage.py migrate
+```
+
+# Criando superusuario para o Django (PRD)
+```
+    $ python manage.py createsuperuser
+        Username : alura
+        Email address: aluno@alura.com.br
+        Password: mestre123
+```
+
+# Rodar aplicação
+```
+    $ python manage.py runserver 0:8000
+http://192.168.33.10:8000 ( alura | mestre123 )
+    $ CTRL+C (parar aplicação)
+```
+
+# Habilitar Daemon do Docker para que seja controlado remotamente (não vem habilitado por padrão)
+Serviço será inicializado sendo "exposto" na porta 2376 desta VM, então o Jenkins vai poder controlar esse docker remotamente (de qualquer máquina da rede).<br>
+O plugin do Docker dentro do Jenkins vai poder executar os comandos para inserir toda a aplicação dentro de um container.<br>
+```
+    $ sudo mkdir -p /etc/systemd/system/docker.service.d/
+    $ sudo cp /vagrant/configs/override.conf /etc/systemd/system/docker.service.d/
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl restart docker.service
+```
