@@ -15,11 +15,12 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.33.10"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "2048"
+    vb.memory = "4096"
+    vb.cpus = 4
     vb.name = 'jenkins-srv'
   end
 
-  config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y swapspace python python3-pip python-dev libmysqlclient-dev python3-venv  build-essential libssl-dev libffi-dev unzip"
+  config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y swapspace python python3-pip python-dev libmysqlclient-dev python3-venv build-essential libssl-dev libffi-dev unzip"
 
   $script_mysql = <<-SCRIPT
     apt-get update && \

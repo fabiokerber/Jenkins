@@ -89,7 +89,7 @@ Pré requisito:
         $ cd ~/jenkins-todo-list/ && git remote add origin git@github.com:fabiokerber/jenkins-todo-list.git
         $ cd ~/jenkins-todo-list/ && git push -u origin master
 
-# Criação de usuário Jenkins
+# Adicionar Credencial ao Jenkins
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
 </kbd>
@@ -130,7 +130,8 @@ Pré requisito:
 <br />
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220953.jpg">
-    jenkins-todo-list-principal (a maioria das interações com o banco será realizada a partir deste job)
+    jenkins-todo-list-principal<br>
+    (a maioria das interações com o banco será realizada a partir deste job)
 </kbd>
 <br />
 <br />
@@ -191,23 +192,27 @@ Perceber a diferença entre build manual e automatizado.<br>
 ```
 
 ```
-> cd .\Jenkins\install
-> vagrant ssh
-    $ cd ~/jenkins-todo-list/to_do/
-    $ vi .env
-        [config]
-        # Secret configuration
-        SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv' (utilizado por exemplo para os hashs de senha)
+    $ sudo pip3 install virtualenv nose coverage nosexcover pylint
+```
 
-        # conf
-        DEBUG=True
+**Isolar a aplicação e ativar o virtualenv**<br>
+```
+    $ cd ~/jenkins-todo-list/    
+    $ virtualenv  --always-copy  venv-django-todolist
+    $ source venv-django-todolist/bin/activate
+    $ cat requirements.txt (visualiza todas as dependencias a serem instaladas com o proximo comando)
+    $ pip install -r requirements.txt
+```
 
-        # Database
-        DB_NAME = "todo_dev"
-        DB_USER = "devops_dev"
-        DB_PASSWORD = "mestre"
-        DB_HOST = "localhost"
-        DB_PORT = "3306"
+**Criando tabelas do banco de dados e ajustando permissões**<br>
+```
+    $ python manage.py makemigrations   
+    $ python manage.py migrate
+```
+
+**Criando superusuario para o Django**<br>
+```
+    $ python manage.py createsuperuser
 ```
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220952.jpg">
