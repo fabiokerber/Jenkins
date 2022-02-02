@@ -90,7 +90,7 @@ Pré requisito:
         $ cd ~/jenkins-todo-list/ && git remote add origin git@github.com:fabiokerber/jenkins-todo-list.git
         $ cd ~/jenkins-todo-list/ && git push -u origin master
 
-**Criação de usuário**<br>
+**Criação de usuário Jenkins**<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
 </kbd>
@@ -106,6 +106,19 @@ Pré requisito:
     Private Key:<br>
     - Enter directly: "Colar chave privada" <br>
     Passphrase: (não necessário pois chave criada sem passphrase)
+</kbd>
+<br />
+<br />
+
+**Novo Job Jenkins**<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220952.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220953.jpg">
+    jenkins-todo-list-principal (a maioria das interações com o banco será realizada a partir deste job)
 </kbd>
 <br />
 <br />
