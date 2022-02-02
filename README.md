@@ -110,6 +110,18 @@ Pré requisito:
 <br />
 <br />
 
+**Alterar/Verificar fuso horário**<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221125.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221126.jpg">
+</kbd>
+<br />
+<br />
+
 **Novo Job Jenkins**<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220952.jpg">
@@ -141,6 +153,17 @@ Pré requisito:
     Marcar Deletar Workspace antes do projeto iniciar.<br>
     Necessário para evitar que haja alguma "sujeira".<br>
     Novo diretório dentro do Jenkins.<br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221121.jpg">
+    Job realizado com sucesso
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221123.jpg">
 </kbd>
 <br />
 <br />
