@@ -85,8 +85,10 @@ Pré requisito:
 </kbd>
 <br />
 <br />
+```
         $ cd ~/jenkins-todo-list/ && git remote add origin git@github.com:fabiokerber/jenkins-todo-list.git
         $ cd ~/jenkins-todo-list/ && git push -u origin master
+```
 <br />
 
 **Criação de usuário**<br>
