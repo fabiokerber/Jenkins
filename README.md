@@ -134,9 +134,9 @@ Pré requisito:
 <br />
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221115.jpg">
-    Consultar frequentemente o repositório se há alguma alteração a cada minuto (aumentar tempo em prd = "crontabguru")
-    * * * * * 
-    --------------
+    Consultar frequentemente o repositório se há alguma alteração a cada minuto (aumentar tempo em prd = "crontabguru")<br>
+    * * * * *<br>
+    --------------<br>
     Marcar Deletar Workspace antes do projeto iniciar.<br>
     Necessário para evitar que haja alguma "sujeira".<br>
     Novo diretório dentro do Jenkins.<br>
