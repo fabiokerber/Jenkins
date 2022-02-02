@@ -14,6 +14,7 @@ Pré requisito:
     > cd .\Jenkins\install
     > vagrant plugin install vagrant-disksize (permite alteração de tamanho do disco à ser criado)
     > vagrant up
+    > vagrant reload
     > vagrant ssh
         $ ps -ef | grep -i mysql (Verificando se o MySQL esta rodando)
         $ mysql -u devops -p (Senha mestre) 
@@ -62,9 +63,9 @@ Pré requisito:
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220920.jpg">
-    alura-jenkins
-    "Colar chave pública"
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220920.jpg"><br>
+    alura-jenkins<br>
+    "Colar chave pública"<br>
 </kbd>
 <br />
 <br />
@@ -98,7 +99,7 @@ Pré requisito:
 <br />
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220945.jpg">
-    Kind: SSH Username with private key - Necessário para interagir com repositório Git<br>
+    Kind: SSH Username with private key (necessário para interagir com repositório Git)<br>
     Scope: Global<br>
     ID: github-ssh<br>
     Description: github-ssh<br>
@@ -112,7 +113,8 @@ Pré requisito:
 
 **Alterar/Verificar fuso horário**<br>
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221125.jpg">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221125.jpg"><br>
+    Acessar configurações do usuário.
 </kbd>
 <br />
 <br />
@@ -157,7 +159,7 @@ Pré requisito:
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221121.jpg">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221121.jpg"><br>
     Job realizado com sucesso
 </kbd>
 <br />
