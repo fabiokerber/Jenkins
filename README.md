@@ -40,7 +40,8 @@ Pré requisito:
     > vagrant ssh
         $ cp -R /vagrant/jenkins-todo-list ~
         $ ssh-keygen -t rsa -b 4096 -C "fabio.kerber@gmail.com" (conta Github) (Enter 3x)
-        $ cat ~/.ssh/id_rsa.pub (anotar!)
+        $ cat ~/.ssh/id_rsa.pub (anotar chave pública!)
+        $ cat ~/.ssh/id_rsa (anotar chave privada!)
         $ git config --global user.name "fabiokerber"
         $ git config --global user.email "fabio.kerber@gmail.com"
 
@@ -96,14 +97,15 @@ Pré requisito:
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220945.jpg">
     Kind: SSH Username with private key - Necessário para interagir com repositório Git<br>
     Scope: Global<br>
     ID: github-ssh<br>
     Description: github-ssh<br>
     Username: git (sempre "git" pois a conexão será realizada por chave SSH)<br>
     Private Key:<br>
-    - Enter directly<br>
+    - Enter directly: "Colar chave privada" <br>
+    Passphrase: (não necessário pois chave criada sem passphrase)
 </kbd>
 <br />
 <br />
