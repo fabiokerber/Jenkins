@@ -86,11 +86,8 @@ Pré requisito:
 <br />
 <br />
 
-    $ cd ~/jenkins-todo-list/ && git remote add origin git@github.com:fabiokerber/jenkins-todo-list.git
-    $ cd ~/jenkins-todo-list/ && git push -u origin master
-
-
-<br />
+        $ cd ~/jenkins-todo-list/ && git remote add origin git@github.com:fabiokerber/jenkins-todo-list.git
+        $ cd ~/jenkins-todo-list/ && git push -u origin master
 
 **Criação de usuário**<br>
 <kbd>
@@ -100,13 +97,13 @@ Pré requisito:
 <br />
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
-    Kind: SSH Username with private key - Necessário para interagir com repositório Git
-    Scope: Global
-    ID: github-ssh
-    Description: github-ssh
-    Username: git (sempre "git" pois a conexão será realizada por chave SSH)
-    Private Key:
-        Enter directly
+    Kind: SSH Username with private key - Necessário para interagir com repositório Git<br>
+    Scope: Global<br>
+    ID: github-ssh<br>
+    Description: github-ssh<br>
+    Username: git (sempre "git" pois a conexão será realizada por chave SSH)<br>
+    Private Key:<br>
+    - Enter directly<br>
 </kbd>
 <br />
 <br />
