@@ -35,10 +35,10 @@ Pré requisito:
 
 **Criação de usuário**<br>
 <kbd>
-    <img src="https://github.com/fabiokerber/CI_CD/blob/main/img/020220220841.JPG">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
 </kbd>
 <kbd>
-    <img src="https://github.com/fabiokerber/CI_CD/blob/main/img/020220220841.JPG">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220841.jpg">
     aaaaaa
 </kbd>
 <br />
