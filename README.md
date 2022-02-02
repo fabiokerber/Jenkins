@@ -169,7 +169,7 @@ Pré requisito:
 <br />
 <br />
 
-## Build manual da aplicação
+# Build manual da aplicação
 Perceber a diferença entre build manual e automatizado.<br>
 ```
 > cd .\Jenkins\install
@@ -195,7 +195,7 @@ Perceber a diferença entre build manual e automatizado.<br>
     $ sudo pip3 install virtualenv nose coverage nosexcover pylint
 ```
 
-**Isolar a aplicação e ativar o virtualenv**<br>
+# Isolar a aplicação e ativar o virtualenv
 ```
     $ cd ~/jenkins-todo-list/    
     $ virtualenv  --always-copy  venv-django-todolist
@@ -204,13 +204,13 @@ Perceber a diferença entre build manual e automatizado.<br>
     $ pip install -r requirements.txt
 ```
 
-**Criando tabelas do banco de dados e ajustando permissões**<br>
+# Criando tabelas do banco de dados e ajustando permissões
 ```
     $ python manage.py makemigrations   
     $ python manage.py migrate
 ```
 
-**Criando superusuario para o Django**<br>
+# Criando superusuario para o Django
 ```
     $ python manage.py createsuperuser
 ```
