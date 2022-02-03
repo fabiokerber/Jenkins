@@ -334,8 +334,8 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <br />
 
-# Ajuste de Job para Build da imagem
-    Nesta etapa podem ser adicionados quantas etapas for necessário.
+# Ajuste de Job para Build da imagem Docker
+    Neste job podem ser adicionadas quantas etapas for necessário.
     Etapa 1 - Checagem rápida se o Dockerfile está de acordo com as convenções de estrutura do arquivo. Linter do Dockerfile.
     Etapa 2 - Build da imagem docker.
     Etapa 3 - Execução do Job.
@@ -372,7 +372,7 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220948.jpg"><br>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220953.jpg"><br>
     Etapa 2. Fará o build da Imagem conforme o Dockerfile contido na raiz.<br>
     ./ (Dockerfile está contido na raiz do repositório)
 </kbd>
