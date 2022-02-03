@@ -340,17 +340,18 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221612.jpg"><br>
     Adicionar mais um step que rodará um container na porta 82 que será de DEV.<br>
-    #!/bin/sh
-    # Subindo o container de teste
-    docker run -d -p 82:8000 -v /var/run/mysqld/mysqld.sock:/var/run/mysqld/mysqld.sock -v /var/lib/jenkins/workspace/jenkins-todo-list-principal/to_do/.env:/usr/src/app/to_do/.env --name=todo-list-teste django_todolist_image_build
-    # Testando a imagem
-    docker exec -i todo-list-teste python manage.py test --keep
-    exit_code=$?
-    # Derrubando o container velho
-    docker rm -f todo-list-teste
-    if [ $exit_code -ne 0 ]; then
-	    exit 1
-    fi
+    Caso o retorno do test que será executado no container, for diferente de zero, o teste irá falhar.<br>
+    #!/bin/sh<br>
+    # Subindo o container de teste<br>
+    docker run -d -p 82:8000 -v /var/run/mysqld/mysqld.sock:/var/run/mysqld/mysqld.sock -v /var/lib/jenkins/workspace/jenkins-todo-list-principal/to_do/.env:/usr/src/app/to_do/.env --name=todo-list-teste django_todolist_image_build<br>
+    # Testando a imagem<br>
+    docker exec -i todo-list-teste python manage.py test --keep<br>
+    exit_code=$?<br>
+    # Derrubando o container velho<br>
+    docker rm -f todo-list-teste<br>
+    if [ $exit_code -ne 0 ]; then<br>
+	    exit 1<br>
+    fi<br>
 </kbd>
 <br />
 <br />
