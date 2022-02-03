@@ -194,7 +194,7 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 
 # Configurar o plugin Docker
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg">
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220927.jpg">
 </kbd>
 <br />
 <br />
