@@ -268,16 +268,6 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 
 # Instalar plugin Config File Provider
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg"><br>
-</kbd>
-<br />
-<br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220916.jpg"><br>
-</kbd>
-<br />
-<br />
-<kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221438.jpg"><br>
 </kbd>
 <br />
