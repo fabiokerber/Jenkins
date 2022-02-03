@@ -199,11 +199,6 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220928.jpg">
-</kbd>
-<br />
-<br />
-<kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220929.jpg">
     Selecionar docker.<br>
     Será listado todos os plugins instalados que podem ser gerenciados pelo Jenkins.<br>
@@ -240,11 +235,6 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220945.jpg"><br>
     Etapa 1.
-</kbd>
-<br />
-<br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220945.jpg"><br>
 </kbd>
 <br />
 <br />
