@@ -355,3 +355,4 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
+Executar o job e analisar o resultado.
