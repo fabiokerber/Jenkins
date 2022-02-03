@@ -179,7 +179,7 @@ O plugin do Docker dentro do Jenkins vai poder executar os comandos para inserir
     $ sudo systemctl restart docker.service
 ```
 
-# Instalação de plugin
+# Instalação do plugin Docker
 Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer servidor da rede, mas neste caso irá gerenciar localmente.<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220919.jpg">
@@ -192,14 +192,9 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <br />
 
-# Configurar o plugin
+# Configurar o plugin Docker
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg">
-</kbd>
-<br />
-<br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220927.jpg">
 </kbd>
 <br />
 <br />
