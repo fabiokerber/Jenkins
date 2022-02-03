@@ -304,7 +304,7 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <br />
 
-# IConfigurar o plugin
+# Configurar o plugin
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg">
 </kbd>
@@ -330,6 +330,50 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220932.jpg">
     Inserido o endereço de localhost e teste realizado com sucesso.<br>
+</kbd>
+<br />
+<br />
+
+# Ajuste de Job para Build da imagem
+    Nesta etapa podem ser adicionados quantas etapas for necessário.
+    Etapa 1 - Checagem rápida se o Dockerfile está de acordo com as convenções de estrutura do arquivo. Linter do Dockerfile.
+    Etapa 2 - Build da imagem docker.
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220940.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220940.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220944.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220945.jpg"><br>
+    Etapa 1.
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220945.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220948.jpg"><br>
+    Etapa 1. Irá executar um container para checar o Dockerfile
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220948.jpg"><br>
+    Etapa 2. Fará o build da Imagem conforme o Dockerfile contido na raiz.<br>
+    ./ (Dockerfile está contido na raiz do repositório)
 </kbd>
 <br />
 <br />
