@@ -443,17 +443,17 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221457.jpg"><br>
-    [config]
-    # Secret configuration
-    SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'
-    # conf
-    DEBUG=True
-    # Database
-    DB_NAME = "todo_dev"
-    DB_USER = "devops_dev"
-    DB_PASSWORD = "mestre"
-    DB_HOST = "localhost"
-    DB_PORT = "3306"
+    [config]<br>
+    # Secret configuration<br>
+    SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'<br>
+    # conf<br>
+    DEBUG=True<br>
+    # Database<br>
+    DB_NAME = "todo_dev"<br>
+    DB_USER = "devops_dev"<br>
+    DB_PASSWORD = "mestre"<br>
+    DB_HOST = "localhost"<br>
+    DB_PORT = "3306"<br>
 </kbd>
 <br />
 <br />
