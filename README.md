@@ -338,6 +338,7 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
     Nesta etapa podem ser adicionados quantas etapas for necessário.
     Etapa 1 - Checagem rápida se o Dockerfile está de acordo com as convenções de estrutura do arquivo. Linter do Dockerfile.
     Etapa 2 - Build da imagem docker.
+    Etapa 3 - Execução do Job.
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220940.jpg"><br>
 </kbd>
@@ -374,6 +375,20 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220948.jpg"><br>
     Etapa 2. Fará o build da Imagem conforme o Dockerfile contido na raiz.<br>
     ./ (Dockerfile está contido na raiz do repositório)
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221003.jpg"><br>
+    Etapa 3.<br>
+    Nesta etapa será clonado o repositório do GitHub para o Jenkins local.<br>
+    Ler o Dockerfile, construir a imagem e vai registrar localmente.
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221012.jpg"><br>
+    Imagem "buildada".
 </kbd>
 <br />
 <br />
