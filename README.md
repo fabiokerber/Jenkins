@@ -233,12 +233,6 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220945.jpg"><br>
-    Etapa 1.
-</kbd>
-<br />
-<br />
-<kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220948.jpg"><br>
     Etapa 1. Irá executar um container para checar o Dockerfile
 </kbd>
