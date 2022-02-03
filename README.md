@@ -414,3 +414,48 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221451.jpg"><br>
+</kbd>
+<br />
+<br />
+
+# Configurar plugin Config File Provider
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221453.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221454.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221455.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221457.jpg"><br>
+    [config]
+    # Secret configuration
+    SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'
+
+    # conf
+    DEBUG=True
+
+    # Database
+    DB_NAME = "todo_dev"
+    DB_USER = "devops_dev"
+    DB_PASSWORD = "mestre"
+    DB_HOST = "localhost"
+    DB_PORT = "3306"
+</kbd>
+<br />
+<br />
