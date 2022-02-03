@@ -457,3 +457,24 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221454.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221500.jpg"><br>
+        [config]<br>
+    # Secret configuration<br>
+    SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'<br>
+    # conf<br>
+    DEBUG=True<br>
+    # Database<br>
+    DB_NAME = "todo"<br>
+    DB_USER = "devops"<br>
+    DB_PASSWORD = "mestre"<br>
+    DB_HOST = "localhost"<br>
+    DB_PORT = "3306"<br>
+</kbd>
+<br />
+<br />
