@@ -182,16 +182,6 @@ O plugin do Docker dentro do Jenkins vai poder executar os comandos para inserir
 # Instalação de plugin
 Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer servidor da rede, mas neste caso irá gerenciar localmente.<br>
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg">
-</kbd>
-<br />
-<br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220916.jpg">
-</kbd>
-<br />
-<br />
-<kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220919.jpg">
 </kbd>
 <br />
