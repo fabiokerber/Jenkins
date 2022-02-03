@@ -280,3 +280,56 @@ O plugin do Docker dentro do Jenkins vai poder executar os comandos para inserir
     $ sudo systemctl daemon-reload
     $ sudo systemctl restart docker.service
 ```
+
+# Instalação de plugin
+Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer servidor da rede, mas neste caso irá gerenciar localmente.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220916.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220919.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220920.jpg">
+</kbd>
+<br />
+<br />
+
+# IConfigurar o plugin
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220915.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220927.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220928.jpg">
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220929.jpg">
+    Selecionar docker.<br>
+    Será listado todos os plugins instalados que podem ser gerenciados pelo Jenkins.<br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220932.jpg">
+    Inserido o endereço de localhost e teste realizado com sucesso.<br>
+</kbd>
+<br />
+<br />
