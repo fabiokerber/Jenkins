@@ -102,8 +102,8 @@ Pré requisito:
 </kbd>
 <br />
 <br />
-    Kind: SSH Username with private key (necessário para interagir com repositório Git)<br>
-    Scope: Global<br>
+    ##Kind:## SSH Username with private key (necessário para interagir com repositório Git)<br>
+    ##Scope:## Global<br>
     ID: github-ssh<br>
     Description: github-ssh<br>
     Username: git (sempre "git" pois a conexão será realizada por chave SSH)<br>
