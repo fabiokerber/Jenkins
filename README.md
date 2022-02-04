@@ -102,7 +102,7 @@ Pré requisito:
 </kbd>
 <br />
 <br />
-    ##Kind:## SSH Username with private key (necessário para interagir com repositório Git)<br>
+    **Kind:** SSH Username with private key (necessário para interagir com repositório Git)<br>
     ##Scope:## Global<br>
     ID: github-ssh<br>
     Description: github-ssh<br>
