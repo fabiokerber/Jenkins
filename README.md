@@ -374,9 +374,20 @@ Plugin para "gestão de parâmetros".<br>
 
 # Configurar plugin Parameterized Trigger<br>
 Este plugin fornece parâmetros para os Jobs que serão executados.<br>
-Valor padrão refere-se ao nome que será registrado no DockerHub.
+Valor padrão refere-se ao nome que será registrado no DockerHub.<br>
+<br>
+image<br>
+django_todolist_image_build<br>
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220831.jpg"><br>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220846.jpg"><br>
+</kbd>
+<br />
+<br />
+Parâmetro definido para que o próximo job execute localmente.<br>
+DOCKER_HOST<br>
+tcp://127.0.0.1:2376<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220848.jpg"><br>
 </kbd>
 <br />
 <br />
