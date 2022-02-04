@@ -8,6 +8,13 @@ Pré requisito:
 |`VirtualBox`| https://download.virtualbox.org/virtualbox/6.1.30/VirtualBox-6.1.30-148432-Win.exe
 
 
+# Pipeline
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220221000.jpg">
+</kbd>
+<br />
+<br />
+
 # Preparação ambiente
 ```
 # Subindo o ambiente virtualizado
@@ -377,7 +384,7 @@ Este plugin fornece parâmetros para os Jobs que serão executados.<br>
 Valor padrão refere-se ao nome que será registrado no DockerHub.<br>
 <br>
 image<br>
-django_todolist_image_build<br>
+aluracursos/django_todolist_image_build<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220846.jpg"><br>
 </kbd>
@@ -388,6 +395,32 @@ DOCKER_HOST<br>
 tcp://127.0.0.1:2376<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220848.jpg"><br>
+</kbd>
+<br />
+<br />
+Selecione Push image
+E adicione as credenciais do DockerHub.
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220852.jpg"><br>
+</kbd>
+<br />
+<br />
+Neste caso por default (lá no serviço do Docker que foi exposto e está rodando localmente), está setado para enviar a imagem para o DockerHub.<br>
+Se configurar para enviar para um registro local, então enviará por padrão para este registro local.<br>
+Vantagem de subir para o DockerHub ou Docker Registry, é que será compartilhada essa imagem.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220854.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220858.jpg"><br>
+</kbd>
+<br />
+<br />
+Aqui você pode alterar quais parâmetros utilizará para ao executar o job.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220859.jpg"><br>
 </kbd>
 <br />
 <br />
