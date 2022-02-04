@@ -60,10 +60,10 @@ Pré requisito:
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220920.jpg"><br>
     alura-jenkins<br>
     "Colar chave pública"<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220920.jpg"><br>
 </kbd>
 <br />
 <br />
@@ -95,8 +95,6 @@ Pré requisito:
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220945.jpg">
     Kind: SSH Username with private key (necessário para interagir com repositório Git)<br>
     Scope: Global<br>
     ID: github-ssh<br>
@@ -105,14 +103,16 @@ Pré requisito:
     Private Key:<br>
     - Enter directly: "Colar chave privada"<br>
     Passphrase: (não necessário pois chave criada sem passphrase)<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220945.jpg">
 </kbd>
 <br />
 <br />
 
 # Alterar/Verificar fuso horário
+Acessar configurações do usuário.
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221125.jpg"><br>
-    Acessar configurações do usuário.
 </kbd>
 <br />
 <br />
@@ -128,10 +128,10 @@ Pré requisito:
 </kbd>
 <br />
 <br />
+    jenkins-todo-list-principal<br>
+    (a maioria das interações com o banco será realizada a partir deste job)<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220220953.jpg">
-    jenkins-todo-list-principal<br>
-    (a maioria das interações com o banco será realizada a partir deste job)
 </kbd>
 <br />
 <br />
@@ -145,21 +145,21 @@ Pré requisito:
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221115.jpg"><br>
     Consultar frequentemente o repositório se há alguma alteração a cada minuto
     (aumentar tempo em prd = "crontabguru")<br>
     * * * * *<br>
-    --------------<br>
+    <br>
     Marcar Deletar Workspace antes do projeto iniciar.<br>
     Necessário para evitar que haja alguma "sujeira".<br>
     Novo diretório dentro do Jenkins.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221115.jpg"><br>
 </kbd>
 <br />
 <br />
+    Job realizado com sucesso
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/020220221121.jpg"><br>
-    Job realizado com sucesso
 </kbd>
 <br />
 <br />
@@ -198,16 +198,16 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220929.jpg">
     Selecionar docker.<br>
     Será listado todos os plugins instalados que podem ser gerenciados pelo Jenkins.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220929.jpg">
 </kbd>
 <br />
 <br />
+    Inserido o endereço de localhost e teste realizado com sucesso.<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220932.jpg">
-    Inserido o endereço de localhost e teste realizado com sucesso.<br>
 </kbd>
 <br />
 <br />
@@ -232,30 +232,30 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
+    Etapa 1. Irá executar um container para checar o Dockerfile.<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220948.jpg"><br>
-    Etapa 1. Irá executar um container para checar o Dockerfile
 </kbd>
 <br />
 <br />
+    Etapa 2. Fará o build da Imagem conforme o Dockerfile contido na raiz.<br>
+    ./ (Dockerfile está contido na raiz do repositório)<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220220953.jpg"><br>
-    Etapa 2. Fará o build da Imagem conforme o Dockerfile contido na raiz.<br>
-    ./ (Dockerfile está contido na raiz do repositório)
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221003.jpg"><br>
     Etapa 3.<br>
     Nesta etapa será clonado o repositório do GitHub para o Jenkins local.<br>
-    Ler o Dockerfile, construir a imagem e vai registrar localmente.
+    Ler o Dockerfile, construir a imagem e vai registrar localmente.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221003.jpg"><br>
 </kbd>
 <br />
 <br />
+    Imagem "buildada".<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221012.jpg"><br>
-    Imagem "buildada".
 </kbd>
 <br />
 <br />
@@ -293,19 +293,21 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221457.jpg"><br>
     [config]<br>
     # Secret configuration<br>
     SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'<br>
+    <br>
     # conf<br>
     DEBUG=True<br>
+    <br>
     # Database<br>
     DB_NAME = "todo_dev"<br>
     DB_USER = "devops_dev"<br>
     DB_PASSWORD = "mestre"<br>
     DB_HOST = "localhost"<br>
     DB_PORT = "3306"<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221457.jpg"><br>
 </kbd>
 <br />
 <br />
@@ -314,19 +316,21 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221500.jpg"><br>
     [config]<br>
     # Secret configuration<br>
     SECRET_KEY = 'r*5ltfzw-61ksdm41fuul8+hxs$86yo9%k1%k=(!@=-wv4qtyv'<br>
+    <br>
     # conf<br>
     DEBUG=True<br>
+    <br>
     # Database<br>
     DB_NAME = "todo"<br>
     DB_USER = "devops"<br>
     DB_PASSWORD = "mestre"<br>
     DB_HOST = "localhost"<br>
     DB_PORT = "3306"<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221500.jpg"><br>
 </kbd>
 <br />
 <br />
@@ -337,22 +341,42 @@ Com a instalação deste plugin o Jenkins pode gerenciar o Docker em qualquer se
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221612.jpg"><br>
     Adicionar mais um step que rodará um container na porta 82 que será de DEV.<br>
     Caso o retorno do test que será executado no container, for diferente de zero, o teste irá falhar.<br>
+    <br>
     #!/bin/sh<br>
     # Subindo o container de teste<br>
     docker run -d -p 82:8000 -v /var/run/mysqld/mysqld.sock:/var/run/mysqld/mysqld.sock -v /var/lib/jenkins/workspace/jenkins-todo-list-principal/to_do/.env:/usr/src/app/to_do/.env --name=todo-list-teste django_todolist_image_build<br>
+    <br>
     # Testando a imagem<br>
     docker exec -i todo-list-teste python manage.py test --keep<br>
     exit_code=$?<br>
+    <br>
     # Derrubando o container velho<br>
     docker rm -f todo-list-teste<br>
     if [ $exit_code -ne 0 ]; then<br>
 	    exit 1<br>
     fi<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/030220221612.jpg"><br>
 </kbd>
 <br />
 <br />
 Executar o job e analisar o resultado.
+
+# Instalar plugin Parameterized Trigger<br>
+Plugin para "gestão de parâmetros".<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220831.jpg"><br>
+</kbd>
+<br />
+<br />
+
+# Configurar plugin Parameterized Trigger<br>
+Este plugin fornece parâmetros para os Jobs que serão executados.<br>
+Valor padrão refere-se ao nome que será registrado no DockerHub.
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/040220220831.jpg"><br>
+</kbd>
+<br />
+<br />
