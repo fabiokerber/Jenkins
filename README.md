@@ -478,19 +478,6 @@ Secret = ID da credencial do token de integração.<br>
         Valor padrão: tcp://127.0.0.1:2376
 
     pipeline {
-
-        agent any    
-
-        stages {
-            stage('Oi Mundo Pipeline como Codigo') {
-                steps {
-                    sh 'echo "Oi Mundo"'
-                }
-            }
-        }
-    }
-
-    pipeline {
         environment {
             dockerImage = "${image}"
         }
