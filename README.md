@@ -424,3 +424,46 @@ Aqui você pode alterar quais parâmetros utilizará para ao executar o job.<br>
 </kbd>
 <br />
 <br />
+
+# Configurar Slack no Jenkins<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221320.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221324.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221331.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221326.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221329.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221349.jpg"><br>
+</kbd>
+<br />
+<br />
+Secret = ID da credencial do token de integração.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221350.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221414.jpg"><br>
+</kbd>
+<br />
+<br />
