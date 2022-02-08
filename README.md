@@ -559,11 +559,6 @@ O parâmetro "Image" está sendo referenciado desta string informada mais acima 
 ```
 Acessar: http://192.168.33.10:9000<br>
 admin | admin <br>
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221155.jpg"><br>
-</kbd>
-<br />
-<br />
 Novo projeto.<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221534.jpg"><br>
