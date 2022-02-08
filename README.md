@@ -523,3 +523,33 @@ Secret = ID da credencial do token de integração.<br>
             }
         }
     }
+
+# Encadeando Job's dentro de um projeto (freestyle)<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/070220221146.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221150.jpg"><br>
+</kbd>
+<br />
+<br />
+Setado o job e informado qual parâmetro será informado assim que iniciar a execução do próximo job neste projeto.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221150.jpg"><br>
+</kbd>
+<br />
+<br />
+Save!
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221156.jpg"><br>
+</kbd>
+<br />
+<br />
+O parâmetro "Image" está sendo referenciado desta string informada mais acima neste projeto.
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221155.jpg"><br>
+</kbd>
+<br />
+<br />
