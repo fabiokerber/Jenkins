@@ -530,18 +530,13 @@ Secret = ID da credencial do token de integração.<br>
 </kbd>
 <br />
 <br />
-<kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221150.jpg"><br>
-</kbd>
-<br />
-<br />
 Setado o job e informado qual parâmetro será informado assim que iniciar a execução do próximo job neste projeto.<br>
+Save!<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221150.jpg"><br>
 </kbd>
 <br />
 <br />
-Save!
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221156.jpg"><br>
 </kbd>
