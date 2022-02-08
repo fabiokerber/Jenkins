@@ -593,11 +593,6 @@ Anotar o token e comandos de scan do sonar.
 <br />
 Criando novo projeto no Jenkins
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221544.jpg"><br>
-</kbd>
-<br />
-<br />
-<kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221551.jpg"><br>
 </kbd>
 <br />
