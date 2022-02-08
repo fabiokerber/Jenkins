@@ -535,7 +535,7 @@ Secret = ID da credencial do token de integração.<br>
 </kbd>
 <br />
 <br />
-Setado o job e informado qual parâmetro será informado assim que iniciar a execução do próximo job neste projeto.<br>
+Setado o job e inserido qual parâmetro será informado assim que iniciar a execução do próximo job neste projeto.<br>
 Save!<br>
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221156.jpg"><br>
@@ -545,6 +545,96 @@ Save!<br>
 O parâmetro "Image" está sendo referenciado desta string informada mais acima neste projeto.
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221155.jpg"><br>
+</kbd>
+<br />
+<br />
+
+# Sonarqube<br>
+
+```
+# Comando para rodar o Sonarqube em container:
+    > cd .\Jenkins\install
+    > vagrant ssh
+    > docker run -d --name sonarqube -p 9000:9000 sonarqube:lts
+```
+Acessar: http://192.168.33.10:9000<br>
+admin | admin <br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221155.jpg"><br>
+</kbd>
+<br />
+<br />
+Novo projeto.<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221534.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221535.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221536.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221538.jpg"><br>
+</kbd>
+<br />
+<br />
+Anotar o token e comandos de scan do sonar.
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221544.jpg"><br>
+</kbd>
+<br />
+<br />
+Criando novo projeto no Jenkins
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221544.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221551.jpg"><br>
+</kbd>
+<br />
+<br />
+Repository URL: https://github.com/fabiokerber/jenkins-todo-list.git<br>
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221555.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221557.jpg"><br>
+</kbd>
+<br />
+<br />
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221558.jpg"><br>
+</kbd>
+<br />
+<br />
+```
+#!/bin/bash
+# Baixando o Sonarqube
+wget https://s3.amazonaws.com/caelum-online-public/1110-jenkins/05/sonar-scanner-cli-3.3.0.1492-linux.zip
+
+# Descompactando o scanner
+unzip sonar-scanner-cli-3.3.0.1492-linux.zip
+
+# Rodando o Scanner
+./sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner   -X \
+-Dsonar.projectKey=jenkins-todolist \
+-Dsonar.sources=. \
+-Dsonar.host.url=http://192.168.33.10:9000 \
+-Dsonar.login=<seu token> (alterar para o token que foi criado no sonarqube!)
+```
+<kbd>
+    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221558.jpg"><br>
 </kbd>
 <br />
 <br />
