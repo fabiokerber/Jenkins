@@ -651,11 +651,6 @@ Ao rodar o projeto no Jenkins, o sonarqube checa se há inconsistências, bugs o
 <br />
 <br />
 <kbd>
-    <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221610.jpg"><br>
-</kbd>
-<br />
-<br />
-<kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221613.jpg"><br>
 </kbd>
 <br />
