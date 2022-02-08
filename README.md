@@ -622,10 +622,13 @@ Repository URL: https://github.com/fabiokerber/jenkins-todo-list.git<br>
 #!/bin/bash
 # Baixando o Sonarqube
 wget https://s3.amazonaws.com/caelum-online-public/1110-jenkins/05/sonar-scanner-cli-3.3.0.1492-linux.zip
+```
 
+```
 # Descompactando o scanner
 unzip sonar-scanner-cli-3.3.0.1492-linux.zip
-
+```
+```
 # Rodando o Scanner
 ./sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner   -X \
 -Dsonar.projectKey=jenkins-todolist \
@@ -633,6 +636,7 @@ unzip sonar-scanner-cli-3.3.0.1492-linux.zip
 -Dsonar.host.url=http://192.168.33.10:9000 \
 -Dsonar.login=<seu token> (alterar para o token que foi criado no sonarqube!)
 ```
+
 <kbd>
     <img src="https://github.com/fabiokerber/Jenkins/blob/main/img/080220221558.jpg"><br>
 </kbd>
