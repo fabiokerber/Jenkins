@@ -21,17 +21,18 @@ Pré requisito:
 # Subindo o ambiente virtualizado
     > cd .\Jenkins\install
     > vagrant plugin install vagrant-disksize (permite alteração de tamanho do disco à ser criado)
+    > vagrant plugin install vagrant-env (permite trabalhar com variáveis)
     > vagrant up
     > vagrant reload
     > vagrant ssh
         $ ps -ef | grep -i mysql (Verificando se o MySQL esta rodando)
         $ mysql -u devops -p (Senha mestre) 
-            show databases
+            show databases;
         $ mysql -u devops_dev -p (Senha mestre) 
-            show databases
+            show databases;
     > vagrant ssh -c 'sudo cat /var/lib/jenkins/secrets/initialAdminPassword' (anotar!)
 
-# Acessar: 192.168.33.10:8080
+# Acessar: 192.168.56.10:8080 (informar initialAdminPassword)
     "Install suggested plugins"
 
 # Credenciais
